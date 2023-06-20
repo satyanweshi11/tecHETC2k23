@@ -1,1 +1,1 @@
-# cryptoBallot
+# tecHETC
