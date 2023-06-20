@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Varino';
+    src: url(/TECHetc/assets/Fonts/VarinonormalRegular-1GXaM.ttf);
+}
+@font-face{
+    font-family: 'Gluon-Regular';
+    src: url(Gluon-Regular.ttf);
+}
+@font-face{
+    font-family: 'Gluon-Bold';
+    src: url(Gluon-Bold.ttf);
+}
+@font-face{
+    font-family: 'Gluon-Light';
+    src: url(Gluon-Light.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background: #272429;
+    font-family: 'Varino';
+}
+
+a{
+    text-decoration: none ;
+}
+
+section{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 110px 100px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 35px 100px 0;
+}
+
+header h2 a{
+    color: white;
+    font-family: 'Varino';
+    font-size: 40px;
+}
+
+
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.box video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.box h1{
+    font-family: 'Righteous';
+    margin-bottom: 15px;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.box h1:hover{
+    -webkit-text-stroke: 3.5px white;
+    color: transparent;
+    transition: 0.9s;
+}
+
+.box h3{
+    font-family: 'Righteous';
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.home1{
+    background: #222831;
+}
+
+.home1 .home1-txt h2{
+    font-size: 4rem;
+    font-family: 'Gluon-Bold';
+    text-align: center;
+    margin-bottom: 90px;
+    color: #FFF200;
+    -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+    -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+    animation: glowing-text 1s ease-in-out infinite alternate;
+}
+
+
+.home1 .home1-txt h3{
+    font-family: 'Gluon-Regular';
+    text-shadow: 0 0 8px #FAFF00;
+    padding-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #FDB827;
+}
+
+@keyframes glowing-text {
+    0% {
+        text-shadow: 0 0 5px #FFD523, 0 0 10px #FAFF00;
+  }
+    
+    100% {
+      text-shadow:  0 0 15px #FCD307, 0 0 10px #FAFF00;
+    }
+  }
+
+.home1 .home1-txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    color: rgb(230, 226, 216);
+}
+
+.home1 .home1-txt p a{
+    color:#C69749;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 1000;
+}
+
+.loader .clogo img{
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.loader p{
+    position: absolute;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-family: 'Varino';
+
+}
+
+
+.loader-hidden{
+    opacity: 0;
+    transition-delay: 1s;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 12px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }
+
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .box h1{
+        font-size: 100px;
+        font-weight: 600;
+    }
+
+    .home1 .home1-txt h3{
+        font-size: 2.2rem;
+    }
+
+    .home1 .home1-txt h3 p{
+        padding-left: 2rem; 
+        padding-right: 2rem; 
+        
+    }
+
+    .home1 .home1-txt p{
+        font-size: 1.5rem;
+
+    }
+    .home1 .home1-txt h2{
+        font-size: 60px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1400px){
+    .loader .clogo img{
+        top: 10rem;
+        width: 200px;
+        height: auto;
+    }
+
+    .loader::after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 8px solid #dddddd;
+        border-top-color: #7449f5;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+    }
+}
+
+@media (max-width: 600px){
+    section{
+        padding: 125px 3 0px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header h2{
+        margin-bottom: 15px;
+    }
+
+    .box h1{
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    .box h3{
+        font-size: 20px;
+    }
+
+    .box h1:hover{
+        -webkit-text-stroke: 3px white;
+    }
+
+    header h2 a{
+        font-size: 35px;
+    }
+
+    .home1 .home1-txt h3{
+        font-size: 1.7rem;
+    }
+
+    .home1 .home1-txt h3 p{
+        padding-left: 2rem; 
+        padding-right: 2rem; 
+        
+    }
+
+    .home1 .home1-txt p{
+        font-size: 1rem;
+
+    }
+    .home1 .home1-txt h2{
+        font-size: 50px;
+        margin-bottom: 4rem;
+    }
+
+    .loader .clogo img{
+        top: 10rem;
+        width: 50%;
+    }
+
+    .loader::after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 8px solid #dddddd;
+        border-top-color: #7449f5;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+    }
+
+    .loader p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 5rem;
+    }
+}
+
+
+
+
+@media (min-aspect-ratio: 16/9){
+    .bgvid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bgvid{
+        width: auto;
+        height: 100%;
+    }
+}

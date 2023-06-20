@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Mathamania/style.css" />
+    <title>Mathamania</title>
+  </head>
+  <body>
+    <div class="loader">
+      
+      <div class="clogo">
+        <img src="college-logo.0d208ba7.png" />
+      </div>
+    </div>
+
+    <header>
+      <h2><a href="/index.html">TECHETC</a></h2>
+    </header>
+    <section class="box">
+      <video
+        src="/Mathamania/Video.mp4"
+        autoplay
+        muted
+        loop
+        class="bgvid"
+      ></video>
+      <h1 class="texteffect">Mathamania</h1>
+      <!-- <h3>Will be Held on (Date) at (time)</h3> -->
+    </section>
+
+    <section class="home1">
+      <div class="home1-txt">
+        <h2 class="about">About Mathamania</h2>
+        <p>
+          Do numbers fascinate you? Are you a Maths enthusiast? Did you enjoy
+          those Maths classes in your school? Well, Mathmania brings you the
+          perfect opportunity to revisit your school days and test how much of
+          it do you still remember? Well, are you ready for the challenge?
+        </p>
+        <h3>Event Details:</h3>
+        <p>
+          A maximum of 80 participants will be allowed in the event on a
+          first-come-first-serve basis. <br />
+          The contestants will be given 30 minutes to solve the paper. <br />
+        </p>
+        <br />
+        <h3>Rules:</h3>
+        <p>
+          1. The three winners of the contest will be decided based on the
+          following parameters:<br />
+          a) The contestants who come up with the correct solution the
+          quickest.<br />
+          b) If two or more contestants solve the question paper correctly
+          simultaneously, another question paper will be provided as a
+          tie-breaker. The maximum time allotted to solve that paper will be 10
+          minutes.<br />
+          c) In case none of the contestants is able to solve the paper in the
+          given time, the difference between the correct and incorrect entries
+          will be calculated ( +1 for each correct entry, -1/2 for each
+          incorrect one), and the contestant with the highest positive score
+          will be declared the winner. If more than one participant has the
+          highest positive score, the tie-breaker option will be availed. The
+          rules mentioned in (b) will apply to the tie-breaker round.<br />
+          2. Any disruptive or disorderly conduct from a participant will result
+          in his/her immediate disqualification from the event.<br />
+          3. In case of any conflict/controversy, the decision of the evaluators
+          will be considered final and absolute.<br />
+          4. <b>Use black/blue ball-point pen only.</b><br />
+        </p>
+        <br />
+        <h3>Team Details:</h3>
+        <p>Mathamania is an Individual Event.</p>
+        <br />
+        <h3>Eligibility:</h3>
+        <p>
+          All participants should have a valid College ID cards and be able to
+          produce the same when asked for verification, failing which they will
+          not be allowed to participate. Each player should be a student
+          pursuing some field of study in Undergraduate courses only.
+        </p>
+        <br />
+        <h3>Registration Fees:</h3>
+        <p>
+          The one-time registration fee for each candidate is Rs.100/-. <br />
+          
+        </p>
+        <br />
+        <h3>Co-ordinators:</h3>
+        <p>
+          Dr. Rajesh Patra (+91 8961855689) <br />
+          Prof. Sudeshna Banerjee (+91 8240326368) <br />
+        </p>
+        <br />
+      </div>
+    </section>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader-hidden");
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild("loader");
+        });
+      });
+    </script>
+  </body>
+</html>
